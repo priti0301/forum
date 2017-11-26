@@ -1,0 +1,29 @@
+<div class="clearfix">
+    <div *ngFor="let key of objectKeys" class="forum-lists">
+      <div class="forum-header">
+          <a routerLink="/viewforum">
+            <img class="forum-img" [src]="category[key].img ">
+            <span class="forum-title">{{category[key].title}}</span>
+          </a>    
+      </div>
+      <div class="forum-body">
+        {{category[key].desc}}
+      </div>  
+      <div class="forum-footer">
+        <div class="author-details"> 
+          <div class="author-logo">
+            <img *ngIf="category[key].authorImg;else dummy_image" [src]="category[key].authorImg">
+            <ng-template #dummy_image><div class="dummy-image"></div></ng-template>            
+          </div>
+          <div class="author-info">
+            {{category[key].author}}
+            <div>{{category[key].datetime}}</div>
+          </div>
+        </div>
+        <div class="post-details">
+          <span class="post-reply"><fa name="reply" title="posts"></fa>  {{category[key].posts}}</span>
+          <span class="post-view"><fa name="eye" title="views"></fa> {{category[key].views}}</span>
+         </div>
+      </div>     
+  </div>
+</div>

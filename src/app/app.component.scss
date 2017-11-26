@@ -1,0 +1,22 @@
+.page-header {
+    padding: 20px;    
+    .header-bar {
+        text-align: center;
+        .site-name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #96B9C6;
+        }
+    }
+}
+.page-body {
+    background-color: #f6f6f6; 
+    padding: 20px;
+    
+    .main {
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+}
+
+
