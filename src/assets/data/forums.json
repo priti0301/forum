@@ -2,7 +2,7 @@
     "results": {
         "category" : {
             "1" : {
-                "title": "Sun glasses",
+                "title": "Sun glasses in market",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus sem. Aliquam vestibulum tortor vitae nisl laoreet laoreet. In vestibulum condimentum tortor non blandit",
                 "views": 499,
                 "posts": 9,
@@ -12,7 +12,7 @@
                 "authorImg": "assets/images/author1.jpg"
             },
             "2" : {
-                "title": "Subway",
+                "title": "Subway users",
                 "desc": "Description goes here.",                
                 "views": 654,
                 "posts": 2,
@@ -21,7 +21,7 @@
                 "img": "assets/images/forum2.jpg"                
             },
             "3" : {
-                "title": "Accessories",
+                "title": "Best accessories to buy",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus sem. Aliquam vestibulum tortor vitae nisl laoreet laoreet. In vestibulum condimentum tortor non blandit",
                 "views": 200,
                 "posts": 3,
@@ -30,7 +30,7 @@
                 "img": "assets/images/forum3.jpg"                
             },
             "4": {
-                "title": "Tourism",
+                "title": "Tourism in India",
                 "desc": "Description goes here.",                
                 "views": 118,
                 "posts": 3,
@@ -39,7 +39,7 @@
                 "img": "assets/images/forum4.jpg" 
             },
             "5" : {
-                "title": "Cars",
+                "title": "Rental Cars",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus sem. Aliquam vestibulum tortor vitae nisl laoreet laoreet. In vestibulum condimentum tortor non blandit",
                 "views": 111,
                 "posts": 2,
@@ -49,7 +49,7 @@
                 "authorImg": "assets/images/author5.jpg"                                
             },
             "6" : {
-                "title": "Black and White",
+                "title": "Black and White or Colors",
                 "desc": "Description goes here.",                
                 "views": 201,
                 "posts": 2,

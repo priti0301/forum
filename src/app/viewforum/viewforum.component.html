@@ -1,7 +1,7 @@
-<div class="clearfix">
-    <div *ngFor="let key of objectKeys" class="forum-lists">
+<div class="row">
+    <div *ngFor="let key of objectKeys" class="forum-lists col-md-4">
       <div class="forum-header">
-          <a routerLink="/viewforum">
+          <a routerLink="/listforum">
             <img class="forum-img" [src]="category[key].img ">
             <span class="forum-title">{{category[key].title}}</span>
           </a>    

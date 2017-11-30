@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { ViewforumComponent } from './viewforum/viewforum.component';
 import { ListforumComponent } from './listforum/listforum.component';
 
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,19 @@ import { ListforumComponent } from './listforum/listforum.component';
     FormsModule,
     RouterModule.forRoot([
       {
-        path: 'viewforum',
+        path: '',
         component: ViewforumComponent
-      }
+      },
+      {        
+        path: 'listforum',
+        component: ListforumComponent
+      },
+      { path: '**', redirectTo: '' }      
     ]),
     HttpModule,
     AngularFontAwesomeModule       
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
