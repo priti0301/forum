@@ -8,12 +8,14 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { ViewforumComponent } from './viewforum/viewforum.component';
+import { ListforumComponent } from './listforum/listforum.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewforumComponent
+    ViewforumComponent,
+    ListforumComponent
   ],
   imports: [
     BrowserModule, 
