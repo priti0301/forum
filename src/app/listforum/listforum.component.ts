@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-listforum',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListforumComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _dataService: DataService) {}
+    
+        forumList: Array<any>;
 
   ngOnInit() {
-  }
+    
+        this._dataService.getForumList().subscribe(res => this.forumList = res);
+        console.log(this.forumList);
+      }
 
 }

@@ -15,4 +15,8 @@ export class DataService {
       .map(result => this.result = result.json().data);
   }
 
+  getForumList() {
+    return this._http.get("http://localhost:3000/api/forumList")
+      .map(result => this.result = result.json().data);
+  }
 }

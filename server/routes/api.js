@@ -42,4 +42,38 @@ router.get('/users', (req, res) => {
     });
 });
 
+function getNextSequence(name) {
+   var ret = db.counters.findAndModify(
+          {
+            query: { _id: name },
+            update: { $inc: { seq: 1 } },
+            new: true,
+            upsert: true            
+          }
+   );
+
+   return ret.seq;
+}
+
+//Get forum list
+router.get('/forumList', (req, res) => {
+ /*   var query = res.query;
+    console.log(query);
+    if (query.hasOwnProperty("id")){
+        query["_id"] = parseInt(query.id);
+    }*/
+    connection((db) => {
+        db.collection('forumList')
+            .find()
+            .toArray()
+            .then((users) => {
+                response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+            });
+    });
+});
+
 module.exports = router;
